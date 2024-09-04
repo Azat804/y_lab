@@ -1,0 +1,102 @@
+@import "./reset.css";
+@import "./fonts.css";
+
+body {
+  font-family: "Gilroy";
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(20px, 4vw, 35px);
+  background-color: #f8f9fa;
+  color: #575757;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #c4dcfe;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  padding: 15px;
+  margin: 0 auto 20px auto;
+  max-width: 500px;
+}
+
+.form__email-label,
+.form__password-label {
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: 400;
+}
+
+.form__email,
+.form__password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /*gap: 0 10px;*/
+  height: 44px;
+}
+
+.form__input-email,
+.form__input-password {
+  background-color: #e8f0fe;
+  border-radius: 3px;
+  width: 75%;
+  padding: 10px;
+  border: none;
+}
+
+.form__input-email:focus,
+.form__input-password:focus {
+  outline: none;
+  border: 4px solid #9ac3fd;
+}
+
+.form__input-email::placeholder,
+.form__input-password::placeholder {
+  color: #595c5f;
+  font-family: "Gilroy";
+  font-weight: 300;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-family: "Gilroy";
+}
+
+.form__button:hover {
+  background-color: #0b5ed7;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  color: #575757;
+  padding: 30px 10px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 420px) {
+  .form {
+    padding: 15px 5px 15px 5px;
+  }
+}
